@@ -1,5 +1,6 @@
 enum Type {
-  token = 'token'
+  token = 'token',
+  payment = 'payment'
 }
 
 export default Type

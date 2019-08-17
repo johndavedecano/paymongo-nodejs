@@ -8,8 +8,12 @@ import createAuth from './../create-auth'
 
 import PaymentException from '../exceptions/payment-exception'
 
+import CreatePaymentContract from '../interfaces/CreatePaymentContract'
+
+import Payment from '../interfaces/Payment'
+
 const createPayment = async (
-  attributes: {},
+  attributes: CreatePaymentContract,
   secretKey?: string
 ) => {
   try {
@@ -29,7 +33,9 @@ const createPayment = async (
       uri: `${API_URL}/${API_VERSION}/payments`
     })
 
-    return response.body.data
+    const payment: Payment = response.body.data
+
+    return payment
   } catch (err) {
     throw new PaymentException(err.messsage)
   }

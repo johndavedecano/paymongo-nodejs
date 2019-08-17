@@ -8,6 +8,8 @@ import createAuth from '../create-auth'
 
 import PaymentException from './../exceptions/payment-exception'
 
+import Payment from '../interfaces/Payment'
+
 const listAllPayments = async (secretKey?: string) => {
   try {
     const response: RequestResponse = await request({
@@ -21,7 +23,9 @@ const listAllPayments = async (secretKey?: string) => {
       uri: `${API_URL}/${API_VERSION}/payments`
     })
 
-    return response.body.data
+    const payments: readonly Payment[] = response.body.data
+
+    return payments
   } catch (err) {
     throw new PaymentException(err.messsage)
   }
