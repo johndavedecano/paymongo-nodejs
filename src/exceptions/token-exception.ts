@@ -2,8 +2,8 @@
 class TokenException extends Error {
   constructor(msg: string) {
     // tslint:disable-next-line: no-expression-statement
-    super(msg);
+    super(msg)
   }
 }
 
-export default TokenException;
+export default TokenException

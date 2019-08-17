@@ -3,4 +3,4 @@ enum CardBrand {
   mastercard = 'mastercard'
 }
 
-export default CardBrand;
+export default CardBrand
