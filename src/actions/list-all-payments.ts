@@ -4,11 +4,11 @@ import { RequestResponse } from 'request'
 
 import { API_URL, API_VERSION } from '../config'
 
-import createAuth from './../create-auth'
+import createAuth from '../create-auth'
 
 import PaymentException from '../../build/module/exceptions/payment-exception'
 
-const retrievePayment = async (paymentId: string, secretKey?: string) => {
+const listAllPayments = async (secretKey?: string) => {
   try {
     const response: RequestResponse = await request({
       headers: {
@@ -18,7 +18,7 @@ const retrievePayment = async (paymentId: string, secretKey?: string) => {
       },
       json: true,
       method: 'GET',
-      uri: `${API_URL}/${API_VERSION}/payments/${paymentId}`
+      uri: `${API_URL}/${API_VERSION}/payments`
     })
 
     return response.body.data
@@ -27,4 +27,4 @@ const retrievePayment = async (paymentId: string, secretKey?: string) => {
   }
 }
 
-export default retrievePayment
+export default listAllPayments
