@@ -6,7 +6,7 @@ import { API_URL, API_VERSION } from '../config'
 
 import createAuth from '../create-auth'
 
-import PaymentException from '../../build/module/exceptions/payment-exception'
+import PaymentException from './../exceptions/payment-exception'
 
 const listAllPayments = async (secretKey?: string) => {
   try {
