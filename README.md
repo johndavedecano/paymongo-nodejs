@@ -1,8 +1,6 @@
 # paymongo-nodejs
 
-Paymongo client for nodejs. 
-
-**THIS IS CURRENTLY UNDER DEVELOPMENT DO NOT USE IN PRODUCTION YET**
+Paymongo client for nodejs.
 
 ```
 npm install paymongo-nodejs --save
