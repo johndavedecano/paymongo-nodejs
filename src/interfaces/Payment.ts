@@ -1,8 +1,10 @@
 import BillingAddress from './BillingAddress'
 
 import PaymentStatus from '../enums/PaymentStatus'
+
 import PayoutDataType from '../enums/PayoutDataType'
-import Type from '../enums/Type'
+
+import ObjectType from '../enums/ObjectType'
 
 export interface PaymentAttribute {
   amount?: number
@@ -34,7 +36,7 @@ export interface PaymentRelationship {
 
 interface Payment {
   id?: string
-  type?: Type
+  type?: ObjectType
   attributes?: PaymentAttribute
   relationships?: PaymentRelationship
 }

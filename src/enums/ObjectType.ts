@@ -1,6 +1,6 @@
-enum Type {
+enum ObjectType {
   token = 'token',
   payment = 'payment'
 }
 
-export default Type
+export default ObjectType

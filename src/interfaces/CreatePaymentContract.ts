@@ -1,7 +1,8 @@
-import Type from '../enums/Type'
+import ObjectType from '../enums/ObjectType'
+
 export interface PaymentSource {
   id: string
-  type: Type
+  type: ObjectType
 }
 
 interface CreatePaymentContract {

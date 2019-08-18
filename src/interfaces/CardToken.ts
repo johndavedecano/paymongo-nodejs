@@ -1,7 +1,8 @@
 import Card from './Card'
 
 import Kind from '../enums/Kind'
-import Type from '../enums/Type'
+
+import ObjectType from '../enums/ObjectType'
 
 interface CardAttribute {
   card?: Card
@@ -14,7 +15,7 @@ interface CardAttribute {
 
 interface CardToken {
   id?: string
-  type?: Type
+  type?: ObjectType
   attributes?: CardAttribute
 }
 
