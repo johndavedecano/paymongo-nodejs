@@ -1,7 +1,5 @@
 import request from 'request-promise'
 
-import { RequestResponse } from 'request'
-
 import { API_URL, API_VERSION } from '../config'
 
 import TokenException from '../exceptions/token-exception'
