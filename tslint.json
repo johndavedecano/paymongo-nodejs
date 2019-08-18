@@ -11,7 +11,7 @@
     "no-var-keyword": true,
     "no-parameter-reassignment": true,
     "typedef": [true, "call-signature"],
-
+    "object-literal-sort-keys": false,
     // Immutability rules
     "readonly-keyword": false,
     "readonly-array": true,
