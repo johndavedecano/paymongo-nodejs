@@ -2,6 +2,10 @@
 
 [![Known Vulnerabilities](https://snyk.io//test/github/johndavedecano/paymongo-nodejs/badge.svg?targetFile=package.json)](https://snyk.io//test/github/johndavedecano/paymongo-nodejs?targetFile=package.json)
 
+[![GitHub issues](https://img.shields.io/github/issues/johndavedecano/paymongo-nodejs)](https://github.com/johndavedecano/paymongo-nodejs/issues)
+
+[![GitHub stars](https://img.shields.io/github/stars/johndavedecano/paymongo-nodejs)](https://github.com/johndavedecano/paymongo-nodejs/stargazers)
+
 Paymongo client for nodejs.
 
 ```
