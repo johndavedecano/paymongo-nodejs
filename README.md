@@ -32,5 +32,7 @@ PAYMONGO_API_VERSION=v1
 ```
 
 
+[![NPM](https://nodei.co/npm/paymongo-nodejs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/paymongo-nodejs/)
+
 
 
