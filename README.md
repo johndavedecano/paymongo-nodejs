@@ -1,5 +1,7 @@
 # paymongo-nodejs
 
+[![Known Vulnerabilities](https://snyk.io//test/github/johndavedecano/paymongo-nodejs/badge.svg?targetFile=package.json)](https://snyk.io//test/github/johndavedecano/paymongo-nodejs?targetFile=package.json)
+
 Paymongo client for nodejs.
 
 ```
