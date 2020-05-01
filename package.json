@@ -32,7 +32,9 @@
     "reset": "git clean -dfx && git reset --hard && npm i",
     "clean": "trash build test",
     "prepare-release": "run-s reset test cov:check doc:html version doc:publish",
-    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('paymongo-nodejs must be installed with Yarn: https://yarnpkg.com/')\""
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('paymongo-nodejs must be installed with Yarn: https://yarnpkg.com/')\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "scripts-info": {
     "info": "Display information about the package scripts",
@@ -54,7 +56,8 @@
     "@types/request-promise": "^4.1.44",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "sha.js": "^2.4.11"
+    "sha.js": "^2.4.11",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
@@ -97,5 +100,6 @@
     "exclude": [
       "**/*.spec.js"
     ]
-  }
+  },
+  "snyk": true
 }
